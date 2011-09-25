@@ -3,7 +3,6 @@ call pathogen#helptags()
 
 " Setup UI
 colorscheme blackboard
-filetype on
 syntax on
 set notimeout
 
@@ -17,4 +16,17 @@ set listchars=tab:¸\ ,eol:¬
 "Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
+
+" Default
+set autoindent
+set ts=4 sts=4 sw=4 expandtab
+
+if has("autocmd")
+    filetype on
+
+    autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
+    autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
+    autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+    autocmd FileType text setlocal ts=6 sts=6 sw=6 noexpandtab
+endif
 " === END OF WHITESPACES SETTING ===
