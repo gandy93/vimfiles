@@ -5,6 +5,10 @@ call pathogen#helptags()
 colorscheme blackboard
 syntax on
 set notimeout
+set number
+
+" Enable buffer switching without saving
+set hidden
 
 " === WHITESPACES SETTING ===
 " Shortcut to rapidly toggle `set list`
