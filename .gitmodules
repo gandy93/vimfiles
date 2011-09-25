@@ -1,0 +1,4 @@
+[submodule "bundle\\blackboard"]
+	path = bundle\\blackboard
+	url = https://github.com/vim-scripts/blackboard.vim.git
+	ignore = dirty
