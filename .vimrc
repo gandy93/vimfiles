@@ -6,6 +6,7 @@ colorscheme blackboard
 syntax on
 set notimeout
 set number
+set hlsearch
 
 " Enable buffer switching without saving
 set hidden
