@@ -2,3 +2,7 @@
 	path = bundle\\blackboard
 	url = https://github.com/vim-scripts/blackboard.vim.git
 	ignore = dirty
+[submodule "bundle/lipsum"]
+	path = bundle/lipsum
+	url = https://github.com/vim-scripts/loremipsum.git
+	ignore = dirty
