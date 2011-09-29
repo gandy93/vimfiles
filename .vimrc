@@ -38,3 +38,9 @@ if has("autocmd")
     autocmd FileType text setlocal ts=6 sts=6 sw=6 noexpandtab
 endif
 " === END OF WHITESPACES SETTING ===
+
+" === KEYBOARD MAPPING ===
+" Start ex command with spacebar
+nmap <space> :
+vmap <space> :
+" === END OF KEYBOARD MAPPING ===
