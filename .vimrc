@@ -1,5 +1,15 @@
+" === PATHOGEN SETTING ===
+let g:pathogen_disabled = []
+
+" Load Command-T only in GVim
+if !has("gui_running")
+    call add(g:pathogen_disabled, 'command-t')
+endif
+
+" Load Pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+" === END OF PATHOGEN SETTING ===
 
 " Setup UI
 colorscheme blackboard
