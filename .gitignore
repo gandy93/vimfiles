@@ -1,2 +1,5 @@
 # Vim's swap files
 *.swp
+
+# The Session plugin's session
+sessions/
