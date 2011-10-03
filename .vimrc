@@ -1,9 +1,15 @@
 " === PATHOGEN SETTING ===
 let g:pathogen_disabled = []
 
-" Load Command-T only in GVim
-if !has("gui_running")
+" Load Command-T only in GVim with Ruby support
+if !has("gui_running") && has("ruby")
     call add(g:pathogen_disabled, 'command-t')
+endif
+
+" Disable TagList and EasyTags if there is no ctags installed
+if !executable("ctags")
+    call add(g:pathogen_disabled, 'taglist')
+    call add(g:pathogen_disabled, 'easytags')
 endif
 
 " Load Pathogen
