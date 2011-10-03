@@ -42,3 +42,7 @@
 	path = bundle/shell
 	url = https://github.com/xolox/vim-shell.git
 	ignore = dirty
+[submodule "bundle/session"]
+	path = bundle/session
+	url = https://github.com/xolox/vim-session.git
+	ignore = dirty
