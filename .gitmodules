@@ -46,3 +46,7 @@
 	path = bundle/session
 	url = https://github.com/xolox/vim-session.git
 	ignore = dirty
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+	ignore = dirty
