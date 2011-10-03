@@ -34,3 +34,7 @@
 	path = bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
 	ignore = dirty
+[submodule "bundle/easytags"]
+	path = bundle/easytags
+	url = https://github.com/xolox/vim-easytags.git
+	ignore = dirty
