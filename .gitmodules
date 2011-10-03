@@ -1,8 +1,12 @@
-[submodule "bundle\\blackboard"]
-	path = bundle\\blackboard
+[submodule "bundle/blackboard"]
+	path = bundle/blackboard
 	url = https://github.com/vim-scripts/blackboard.vim.git
 	ignore = dirty
 [submodule "bundle/lipsum"]
 	path = bundle/lipsum
 	url = https://github.com/vim-scripts/loremipsum.git
+	ignore = dirty
+[submodule "bundle/command-t"]
+    path = bundle/command-t
+    url = git://git.wincent.com/command-t.git
 	ignore = dirty
