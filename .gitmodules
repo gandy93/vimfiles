@@ -54,3 +54,7 @@
 	path = bundle/utl
 	url = https://github.com/vim-scripts/utl.vim.git
 	ignore = dirty
+[submodule "bundle/vstwithsyn"]
+	path = bundle/vstwithsyn
+	url = https://github.com/vim-scripts/vst_with_syn.git
+	ignore = dirty
