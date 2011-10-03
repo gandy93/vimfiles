@@ -58,3 +58,7 @@
 	path = bundle/vstwithsyn
 	url = https://github.com/vim-scripts/vst_with_syn.git
 	ignore = dirty
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+	ignore = dirty
