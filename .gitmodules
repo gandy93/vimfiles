@@ -38,3 +38,7 @@
 	path = bundle/easytags
 	url = https://github.com/xolox/vim-easytags.git
 	ignore = dirty
+[submodule "bundle/shell"]
+	path = bundle/shell
+	url = https://github.com/xolox/vim-shell.git
+	ignore = dirty
