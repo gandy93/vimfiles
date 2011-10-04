@@ -20,7 +20,6 @@ call pathogen#helptags()
 " Setup UI
 colorscheme blackboard
 syntax on
-set notimeout
 set number
 
 " Search settings
@@ -31,8 +30,6 @@ set incsearch
 set hidden
 
 " === WHITESPACES SETTING ===
-" Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
  
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:¸\ ,eol:¬
@@ -56,7 +53,25 @@ endif
 " === END OF WHITESPACES SETTING ===
 
 " === KEYBOARD MAPPING ===
+" Setup leader key
+let mapleader = ","
+set notimeout
+
 " Start ex command with spacebar
 nmap <space> :
 vmap <space> :
+
+" Local CD to current's file directory.
+nmap <leader>ccd :lcd %:p:h<CR>
+
+" Toggle TagList
+if !pathogen#is_disabled("taglist")
+    nmap <leader>l :TlistToggle<CR>
+endif
+
+" Open/close NERDtree
+nmap <leader>e :NERDTreeToggle<CR>
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>w :set list!<CR>
 " === END OF KEYBOARD MAPPING ===
