@@ -60,6 +60,8 @@ if has("autocmd")
     autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType text setlocal ts=6 sts=6 sw=6 noexpandtab
+
+    autocmd BufReadPost fugitive://* set bufhidden=delete
 endif
 " === END OF WHITESPACES SETTING ===
 
