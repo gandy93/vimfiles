@@ -13,10 +13,11 @@ if !executable("ctags")
 endif
 
 " Load Pathogen
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 " === END OF PATHOGEN SETTING ===
 
+" === MISC SETTING ===
 " Setup UI
 colorscheme blackboard
 syntax on
@@ -29,10 +30,17 @@ set incsearch
 " Enable buffer switching without saving
 set hidden
 
+" Make NERDTree show bookmarks by default
+let NERDTreeShowBookmarks = 1
+
+" Don't ask whether to save/load session
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+" === END OF MISC SETTING ===
+
 " === WHITESPACES SETTING ===
- 
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:¸\ ,eol:¬
+set listchars=tab:>\ ,eol:¬
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
