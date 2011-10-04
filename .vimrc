@@ -36,6 +36,9 @@ let NERDTreeShowBookmarks = 1
 " Don't ask whether to save/load session
 let g:session_autoload = "no"
 let g:session_autosave = "no"
+
+" Status line
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " === END OF MISC SETTING ===
 
 " === WHITESPACES SETTING ===
