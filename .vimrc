@@ -1,8 +1,8 @@
 " === PATHOGEN SETTING ===
 let g:pathogen_disabled = []
 
-" Load Command-T only in GVim with Ruby support
-if !has("gui_running") && has("ruby")
+" Load Command-T only with Ruby support
+if !has("ruby") && !executable("ruby")
     call add(g:pathogen_disabled, 'command-t')
 endif
 
