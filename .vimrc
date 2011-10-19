@@ -82,6 +82,11 @@ if !pathogen#is_disabled("taglist")
     nmap <leader>l :TlistToggle<CR>
 endif
 
+" Refresh list of files in Command-t
+if !pathogen#is_disabled("command-t")
+    nnoremap <leader>f :CommandTFlush<CR>
+endif
+
 " Open/close NERDtree
 nmap <leader>e :NERDTreeToggle<CR>
 
