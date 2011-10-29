@@ -87,6 +87,23 @@ if !pathogen#is_disabled("command-t")
     nnoremap <leader>f :CommandTFlush<CR>
 endif
 
+" Open Console2 in the current directory
+function! s:openConsole(type)
+    if !executable('Console')
+        return 1
+    endif
+
+    let l:cmd   = 'Console -t ' . a:type . ' -d "' . expand('%:p:h') . '"'
+    
+    if !pathogen#is_disabled("shell")
+        call xolox#shell#execute(l:cmd, 0)
+    else
+        system(l:cmd)
+    endif
+endfunction
+nnoremap <leader>cw :call <SID>openConsole('Console2')<CR>
+nnoremap <leader>cb :call <SID>openConsole('GitBash')<CR>
+
 " Open/close NERDtree
 nmap <leader>e :NERDTreeToggle<CR>
 
